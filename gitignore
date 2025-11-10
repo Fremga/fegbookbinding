@@ -1,0 +1,9 @@
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Temporary files
+*.log
+*.bak
+*.tmp

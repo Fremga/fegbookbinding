@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FEG Bookbinding | Custom Bookbinding, Repairs & Restoration</title>
+  <title>FEG Bookbinding | Custom Bookbinding, Repairs &amp; Restoration</title>
   <meta name="description" content="FEG Bookbinding offers expert book repairs in Perth - Beechboro 6063, custom leather bindings, and archival-quality book restoration. Explore our craftsmanship and preserve your treasured books.">
 
   <!-- Canonical URL -->
@@ -16,13 +15,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="image/icon/favicon-16x16.png">
   <link rel="manifest" href="image/icon/site.webmanifest">
 
-  <!-- CSS -->
+  <!-- CSS & Fonts (single combined import) -->
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
-  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-  <meta property="og:title" content="FEG Bookbinding | Custom Bookbinding, Book Repairs & Restoration in Perth - Beechboro 6063" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="FEG Bookbinding | Custom Bookbinding, Book Repairs &amp; Restoration in Perth - Beechboro 6063" />
   <meta property="og:description" content="FEG Bookbinding offers expert book repairs in Perth - Beechboro 6063, custom leather bindings, and archival-quality book restoration. Explore our craftsmanship and preserve your treasured books." />
   <meta property="og:image" content="https://www.fegbookbinding.com.au/image/og-image.jpg" />
   <meta property="og:url" content="https://www.fegbookbinding.com.au/" />
@@ -30,26 +28,22 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FEG Bookbinding | Custom Bookbinding, Repairs & Restoration in Perth - Beechboro 6063" />
+  <meta name="twitter:title" content="FEG Bookbinding | Custom Bookbinding, Repairs &amp; Restoration in Perth - Beechboro 6063" />
   <meta name="twitter:description" content="FEG Bookbinding offers expert book repairs, custom leather bindings, and archival-quality book restoration. Explore our craftsmanship and preserve your treasured books." />
   <meta name="twitter:image" content="https://www.fegbookbinding.com.au/image/og-image.jpg" />
 
-  <!-- Keywords (optional, but not heavily used by Google) -->
   <meta name="keywords" content="bookbinding, book repairs Perth, book restoration Perth, custom books, handmade books, leather binding, archival quality, book design, unique book gifts">
-
-  <!-- Author (optional) -->
   <meta name="author" content="FEG Bookbinding" />
 </head>
 <body>
 
   <!-- Navigation -->
   <header class="navbar">
-    <a href="index.html">
-      <div class="logo">
-          <img src="image/logo_w.png" alt="Logo" />
-      </div>
+    <a href="index.html" class="logo" aria-label="FEG Bookbinding home">
+      <img class="logo-img logo-on-hero" src="image/logo_w.png" alt="FEG Bookbinding logo">
+      <img class="logo-img logo-off-hero" src="image/logo_r.png" alt="" aria-hidden="true">
     </a>
-    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
     <nav class="nav-links" id="navLinks">
       <a href="gallery.html">Gallery</a>
       <a href="materials.html">Materials</a>
@@ -62,47 +56,32 @@
     <div class="hero-overlay"></div>
     <div class="hero-text">
       <div class="hero-heading">
-        <h1>FEG<BR>BOOKBINDING</h1>
+        <h1>FEG<br>BOOKBINDING</h1>
       </div>
-       <div class="hero-subheading">
-        <h2 class="sub-hero"><i>BOOKBINDER & RESTORER</i></h2>
+      <div class="hero-subheading">
+        <h2 class="sub-hero"><i>BOOKBINDER &amp; RESTORER</i></h2>
       </div>
     </div>
   </section>
 
   <h3>About</h3>
 
-  <!-- Body -->
   <section class="intro">
     <p>
       I am dedicated to preserve the timeless art of bookbinding, restoration and conservation while crafting custom books that reflect the unique stories of my clients. I believe that every book is a treasure, deserving of meticulous care and attention. My goal is to blend traditional craftsmanship with modern techniques to create lasting works of art that honor the written word.
     </p>
   </section>
 
-    <!-- Body -->
   <section class="sub-intro">
     <p>
-      <em>Whether restoring a beloved family heirloom, bible or designing a unique book for a special occasion, I focus on using high-quality materials and traditional techniques to ensure that each piece is not only beautiful but also durable. My goal is to create lasting works of art that celebrate the written word and preserve the memories they hold.</em>
+      <em>Whether restoring a beloved family heirloom, bible, sacred text or designing a unique book for a special occasion, I focus on using high-quality conservation materials and traditional techniques to ensure that each piece is not only beautiful but also durable and reversible where needed. My goal is to create lasting works of art that celebrate the written word and preserve the memories they hold.</em>
     </p>
   </section>
-  
-    <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
 
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-      menuToggle.innerHTML = navLinks.classList.contains("show") ? "&times;" : "&#9776;";
-    });
-  </script>
 
-    <!-- Footer -->
-  <footer class="site-footer" style="background-image: url('image/index.jpg');">
-    <p>&copy; 2025 FEG Bookbinding. All rights reserved.</p>
-  </footer>
 
+  <footer class="site-footer" style="background-image: url('image/index.jpg');"></footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
-
-
-

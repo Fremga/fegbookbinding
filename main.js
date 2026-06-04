@@ -41,7 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('active');
         contents.forEach(content => content.style.display = 'none');
         const target = document.getElementById(button.getAttribute('data-target'));
-        if (target) target.style.display = 'block';
+        if (target) {
+          target.style.display = 'block';
+          setTimeout(() => {
+            const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
+            const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 16;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }, 50);
+        }
       });
     });
   }
